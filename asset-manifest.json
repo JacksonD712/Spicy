@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Spicy/static/css/main.57e4e2c6.css",
+    "main.js": "/Spicy/static/js/main.8776b07a.js",
+    "static/js/453.51c24384.chunk.js": "/Spicy/static/js/453.51c24384.chunk.js",
+    "static/media/product.jpg": "/Spicy/static/media/product.5d00f6960e7557de00ce.jpg",
+    "static/media/potato.jpeg": "/Spicy/static/media/potato.7f1a89e1d326a96744ca.jpeg",
+    "static/media/home.jpeg": "/Spicy/static/media/home.c7ec34c95070f9dae3c6.jpeg",
+    "static/media/seafood.png": "/Spicy/static/media/seafood.a3225935651f16710f8d.png",
+    "static/media/mexican.jpeg": "/Spicy/static/media/mexican.739565de234cc3eec32a.jpeg",
+    "static/media/pasta.jpg": "/Spicy/static/media/pasta.227e35572c356c178cfe.jpg",
+    "static/media/steak.jpg": "/Spicy/static/media/steak.4b024821ac8a5bcb02d7.jpg",
+    "static/media/Aldhabi.ttf": "/Spicy/static/media/Aldhabi.28f9841a4f2619850400.ttf",
+    "static/media/story1.jpeg": "/Spicy/static/media/story1.880895962a408d9878f3.jpeg",
+    "static/media/SilverForteGrunge.ttf": "/Spicy/static/media/SilverForteGrunge.c7bfd8bbdbc87420ae74.ttf",
+    "static/media/chicken.jpeg": "/Spicy/static/media/chicken.b5884190632f8cb59024.jpeg",
+    "static/media/logo.png": "/Spicy/static/media/logo.41516c75c96dab51a932.png",
+    "static/media/story2.jpeg": "/Spicy/static/media/story2.7316817faa20ff92f86f.jpeg",
+    "index.html": "/Spicy/index.html",
+    "main.57e4e2c6.css.map": "/Spicy/static/css/main.57e4e2c6.css.map",
+    "main.8776b07a.js.map": "/Spicy/static/js/main.8776b07a.js.map",
+    "453.51c24384.chunk.js.map": "/Spicy/static/js/453.51c24384.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57e4e2c6.css",
+    "static/js/main.8776b07a.js"
+  ]
+}
