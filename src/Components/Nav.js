@@ -7,7 +7,7 @@ function Nav() {
   const [navbarBg, setNavbarBg] = useState("bg-transparent");
   const [textColor, setTextColor] = useState("text-white");
   const [textFont, setTextFont] = useState("text-3xl");
-  const [logoSize, setLogoSize] = useState("h-32");
+  const [logoSize, setLogoSize] = useState("h-40");
   const [isScreenMinimized, setIsScreenMinimized] = useState(false);
 
   const toggleMenu = () => {
@@ -19,12 +19,12 @@ function Nav() {
       setNavbarBg("bg-orange-700 shadow-md");
       setTextColor("text-white");
       setTextFont("text-1xl");
-      setLogoSize("h-20");
+      setLogoSize("h-32");
     } else {
       setNavbarBg("bg-transparent");
       setTextColor("text-white");
       setTextFont("text-2xl");
-      setLogoSize("h-32");
+      setLogoSize("h-40");
     }
   };
 
@@ -101,7 +101,7 @@ function Nav() {
             className="px-4 py-2 hover:text-orange-200 cursor-pointer"
             onClick={() => scrollToSection("story")}
           >
-            About
+            About us
           </div>
         
         </div>
@@ -125,7 +125,7 @@ function Nav() {
             className="px-4 py-2 hover:text-orange-200 cursor-pointer"
             onClick={() => scrollToSection("product")}
           >
-            Products
+           Recipes
           </div>
           <div
             className="px-4 py-2 hover:text-orange-200 cursor-pointer"

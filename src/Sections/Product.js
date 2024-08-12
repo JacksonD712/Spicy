@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, {useState} from "react";
+import {motion, AnimatePresence} from "framer-motion";
 import backgroundImage from "../assets/product.jpg";
-import steak from "../assets/steak.jpg";
-import seafood from "../assets/seafood.png";
-import chicken from "../assets/chicken.jpeg";
-import potato from "../assets/potato.jpeg";
-import pasta from "../assets/pasta.jpg";
-import mexican from "../assets/mexican.jpeg";
+import steak from "../assets/steak.png";
+import seafood from "../assets/sea.png";
+import chicken from "../assets/chicken.png";
+import potato from "../assets/potato.png";
+import pasta from "../assets/italian.png";
+import mexican from "../assets/mexican.png";
 
 function Product() {
   const [selectedId, setSelectedId] = useState(null);
@@ -28,7 +28,8 @@ function Product() {
       image: seafood,
       rating: 3,
       colorClass: "text-white",
-      recipe: "Recipe for Sea Food: Ingredients and steps to prepare the sea food.",
+      recipe:
+        "Recipe for Sea Food: Ingredients and steps to prepare the sea food.",
     },
     {
       id: "3",
@@ -37,7 +38,8 @@ function Product() {
       image: chicken,
       rating: 5,
       colorClass: "text-green-500",
-      recipe: "Recipe for Chicken: Ingredients and steps to prepare the chicken.",
+      recipe:
+        "Recipe for Chicken: Ingredients and steps to prepare the chicken.",
     },
     {
       id: "4",
@@ -55,7 +57,8 @@ function Product() {
       image: pasta,
       rating: 4,
       colorClass: "text-purple-500",
-      recipe: "Recipe for Italian: Ingredients and steps to prepare the Italian dish.",
+      recipe:
+        "Recipe for Italian: Ingredients and steps to prepare the Italian dish.",
     },
     {
       id: "6",
@@ -64,11 +67,12 @@ function Product() {
       image: mexican,
       rating: 1,
       colorClass: "text-pink-500",
-      recipe: "Recipe for Mexican Mix: Ingredients and steps to prepare the Mexican mix.",
+      recipe:
+        "Recipe for Mexican Mix: Ingredients and steps to prepare the Mexican mix.",
     },
   ];
 
-  const handleCategoryClick = (id) => {
+  const handleCategoryClick = id => {
     setSelectedId(id);
   };
 
@@ -91,39 +95,42 @@ function Product() {
 
       <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
 
-      <div className="relative z-10 text-white text-center w-full max-w-6xl px-6">
-        <h1 className="text-8xl mb-6 font-allura pt-8">
+      <div className="relative z-10 text-white text-center w-full max-w-7xl px-6">
+        <h1
+          className="text-8xl pt-8"
+          style={{fontFamily: "Aldhabi, serif"}}
+        >
           Our Product
         </h1>
         <h2 className="text-orange-700 font-bold text-2xl mb-12 font-grunge">
           Crafted for Flavor, Perfected for Taste!
         </h2>
-        <div className="bg-zinc-900 rounded-6xl shadow-4xl mx-auto mb-24 border-dashed border-2 border-orange-700 p-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-            {categories.map((category) => (
+        <div className="bg-zinc-900 rounded-6xl shadow-4xl mx-auto mb-24 border-dashed border-2 border-orange-700 p-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {categories.map(category => (
               <motion.div
                 key={category.id}
                 layoutId={category.id}
-                className="flex items-center p-8 rounded-lg cursor-pointer"
+                className="flex items-center p-4 rounded-lg cursor-pointer"
                 onClick={() => handleCategoryClick(category.id)}
               >
                 <img
                   src={category.image}
                   alt={category.name}
-                  className="w-48 h-48 object-cover rounded-lg mr-4"
+                  className="w-36 h-56 object-cover rounded-lg mr-4"
                 />
                 <div className="flex flex-col justify-center">
                   <motion.h2
                     layoutId={`title-${category.id}`}
-                    className="text-5xl"
-                    style={{ fontFamily: 'SilverForteGrungeGrunge' }}
+                    className="text-4xl"
+                    style={{fontFamily: "SilverForteGrungeGrunge"}}
                   >
                     {category.name}
                   </motion.h2>
                   <motion.h5
                     layoutId={`subtitle-${category.id}`}
-                    className={`text-5xl ${category.colorClass}`}
-                    style={{ fontFamily: 'Aldhabi, serif' }}
+                    className={`text-3xl ${category.colorClass}`}
+                    style={{fontFamily: "Aldhabi, serif"}}
                   >
                     {category.description}
                   </motion.h5>
@@ -148,8 +155,8 @@ function Product() {
               &times;
             </motion.button>
             {categories
-              .filter((category) => category.id === selectedId)
-              .map((category) => (
+              .filter(category => category.id === selectedId)
+              .map(category => (
                 <React.Fragment key={category.id}>
                   <motion.h5
                     layoutId={`subtitle-${category.id}`}

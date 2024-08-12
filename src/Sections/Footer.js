@@ -23,7 +23,7 @@ function Footer() {
       <div className="bg-orange-600 flex flex-col md:flex-row items-center justify-center flex-grow">
         <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-5xl mx-auto px-4 space-y-10 md:space-x-10 md:space-y-0">
           {/* Logo */}
-          <div className="flex-shrink-0 mb-10 md:mb-0">
+          <div className="  mb-10 md:mb-0">
             <img src={logo} alt="Logo" className="w-52 h-auto" />
           </div>
 
