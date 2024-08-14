@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link as ScrollLink, scroller } from "react-scroll";
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 function Nav() {
@@ -16,7 +17,7 @@ function Nav() {
 
   const changeNavbarBg = () => {
     if (window.scrollY >= 50) {
-      setNavbarBg("bg-orange-700 shadow-md");
+      setNavbarBg("bg-orange-500 shadow-md");
       setTextColor("text-white");
       setTextFont("text-1xl");
       setLogoSize("h-32");
@@ -103,7 +104,6 @@ function Nav() {
           >
             About us
           </div>
-        
         </div>
 
         {!isScreenMinimized && (
@@ -121,15 +121,21 @@ function Nav() {
             isMenuOpen ? "block" : "hidden"
           } lg:block lg:justify-center w-full nav-text`}
         >
-        <div
+          <div
             className="px-4 py-2 hover:text-orange-200 cursor-pointer"
             onClick={() => scrollToSection("product")}
           >
-           Recipes
+            Products
           </div>
+          <Link
+            to="/recepies"
+            className="px-4 py-2 hover:text-orange-200 cursor-pointer"
+          >
+            Recepies
+          </Link>
           <div
             className="px-4 py-2 hover:text-orange-200 cursor-pointer"
-            onClick={() => scrollToSection("contact")}
+            onClick={() => scrollToSection("footer")}
           >
             Contact Us
           </div>

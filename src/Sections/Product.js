@@ -18,7 +18,7 @@ function Product() {
       description: "MARINADE",
       image: steak,
       rating: 4,
-      colorClass: "text-blue-700",
+      colorClass: "text-white",
       recipe: "Recipe for Steak: Ingredients and steps to prepare the steak.",
     },
     {
@@ -37,7 +37,7 @@ function Product() {
       description: "SEASONING",
       image: chicken,
       rating: 5,
-      colorClass: "text-green-500",
+      colorClass: "text-white",
       recipe:
         "Recipe for Chicken: Ingredients and steps to prepare the chicken.",
     },
@@ -47,7 +47,7 @@ function Product() {
       description: "SEASONING",
       image: potato,
       rating: 2,
-      colorClass: "text-yellow-500",
+      colorClass: "text-white",
       recipe: "Recipe for Potato: Ingredients and steps to prepare the potato.",
     },
     {
@@ -56,7 +56,7 @@ function Product() {
       description: "SEASONING",
       image: pasta,
       rating: 4,
-      colorClass: "text-purple-500",
+      colorClass: "text-white",
       recipe:
         "Recipe for Italian: Ingredients and steps to prepare the Italian dish.",
     },
@@ -66,7 +66,7 @@ function Product() {
       description: "MARINADE",
       image: mexican,
       rating: 1,
-      colorClass: "text-pink-500",
+      colorClass: "text-white",
       recipe:
         "Recipe for Mexican Mix: Ingredients and steps to prepare the Mexican mix.",
     },
@@ -97,14 +97,12 @@ function Product() {
 
       <div className="relative z-10 text-white text-center w-full max-w-7xl px-6">
         <h1
-          className="text-8xl pt-8"
+          className="text-9xl pt-8"
           style={{fontFamily: "Aldhabi, serif"}}
         >
           Our Product
         </h1>
-        <h2 className="text-orange-700 font-bold text-2xl mb-12 font-grunge">
-          Crafted for Flavor, Perfected for Taste!
-        </h2>
+       
         <div className="bg-zinc-900 rounded-6xl shadow-4xl mx-auto mb-24 border-dashed border-2 border-orange-700 p-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {categories.map(category => (

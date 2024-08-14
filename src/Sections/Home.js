@@ -85,9 +85,7 @@ function Home() {
             {sentences[currentSentence]}
           </h1>
 
-          <button className="bg-transparent text-sm hover:bg-orange-700 text-white font-semibold hover:text-white py-2 px-6 md:px-8 border border-orange-700 hover:border-transparent rounded-full mt-8">
-            PRODUCTS
-          </button>
+        
         </div>
       </div>
     </div>
