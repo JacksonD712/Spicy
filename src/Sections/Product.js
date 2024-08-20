@@ -103,7 +103,7 @@ function Product() {
           Our Product
         </h1>
        
-        <div className="bg-zinc-900 rounded-6xl shadow-4xl mx-auto mb-24 border-dashed border-2 border-orange-700 p-8">
+        <div className="bg-zinc-900 rounded-6xl shadow-4xl mx-auto mb-24  p-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {categories.map(category => (
               <motion.div
