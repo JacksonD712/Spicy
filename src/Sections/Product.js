@@ -172,7 +172,7 @@ function Product() {
                     layoutId={`image-${category.id}`}
                     src={category.image}
                     alt={category.name}
-                    className="w-48 h-48 object-cover rounded-lg mb-4"
+                    className=" w-64 h-64 object-cover rounded-lg mb-4"
                   />
                   <motion.p className="text-xl p-4">{category.recipe}</motion.p>
                 </React.Fragment>
