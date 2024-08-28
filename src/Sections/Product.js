@@ -96,13 +96,10 @@ function Product() {
       <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
 
       <div className="relative z-10 text-white text-center w-full max-w-7xl px-6">
-        <h1
-          className="text-9xl pt-8"
-          style={{fontFamily: "Aldhabi, serif"}}
-        >
+        <h1 className="text-9xl pt-8" style={{fontFamily: "Aldhabi, serif"}}>
           Our Product
         </h1>
-       
+
         <div className="bg-zinc-900 rounded-6xl shadow-4xl mx-auto mb-24  p-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {categories.map(category => (
@@ -172,7 +169,7 @@ function Product() {
                     layoutId={`image-${category.id}`}
                     src={category.image}
                     alt={category.name}
-                    className=" w-64 h-64 object-cover rounded-lg mb-4"
+                    className="w-80 h-80 object-contain rounded-lg mb-4" // Updated size
                   />
                   <motion.p className="text-xl p-4">{category.recipe}</motion.p>
                 </React.Fragment>
