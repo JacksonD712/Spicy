@@ -26,8 +26,8 @@ function Home() {
           (prevSentence) => (prevSentence + 1) % sentences.length
         );
         setSwipe(false);
-      }, 1000); // Delay before changing sentence
-    }, 5000); // Interval between sentence changes
+      }, 2000); // Delay before changing sentence
+    }, 7000); // Interval between sentence changes
 
     return () => clearInterval(interval);
   }, []);

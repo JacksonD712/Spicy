@@ -17,7 +17,7 @@ function Nav() {
 
   const changeNavbarBg = () => {
     if (window.scrollY >= 50) {
-      setNavbarBg("bg-orange-500 shadow-md");
+      setNavbarBg("bg-orange-700 shadow-md");
       setTextColor("text-white");
       setTextFont("text-1xl");
       setLogoSize("h-32");

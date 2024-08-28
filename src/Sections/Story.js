@@ -53,7 +53,7 @@ function Story() {
             ref={leftColumnRef}
             style={{ transform: "translateX(-100%)" }}
           >
-            <h4 className="text-orange-700 ml-11">Discover</h4>
+            
             <h1
               className="text-white text-4xl md:text-6xl"
               style={{ fontFamily: "Aldhabi, cursive" }}

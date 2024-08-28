@@ -23,7 +23,7 @@ function Footer() {
           </h1>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 w-screen bg-orange-500">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 w-screen bg-orange-700">
         {/* Logo Column */}
         <div className="flex items-center justify-center">
           <img src={logo} alt="Logo" className="w-52 h-auto" />
@@ -65,16 +65,16 @@ function Footer() {
         </div>
 
         {/* Location Column */}
-        <div className="flex items-center justify-center">
-          <div className="text-white text-sm text-center">
+        <div className="flex items-start justify-start">
+          <div className="text-white text-sm">
             <div
-              className="text-6xl mb-2 flex items-center justify-center"
+              className="text-6xl mb-2"
               style={{fontFamily: "Aldhabi, serif"}}
             >
               Our Location
             </div>
             <div
-              className="text-4xl font-thin flex items-center justify-center"
+              className="text-4xl font-thin flex items-start"
               style={{fontFamily: "Aldhabi, serif", fontWeight: "100"}}
             >
               <FontAwesomeIcon
@@ -85,8 +85,8 @@ function Footer() {
               Khaldeh, Lebanon
             </div>
             <div
-              className="text-4xl font-thin flex items-center justify-center"
-              style={{fontFamily: "Aldhabi, serif", fontWeight: "100"}}
+              className="text-xl font-thin flex items-start"
+              
             >
               <FontAwesomeIcon
                 icon={faPhone}
@@ -96,7 +96,7 @@ function Footer() {
               +961 03 730 627
             </div>
             <div
-              className="text-3xl font-thin flex items-center justify-center"
+              className="text-3xl font-thin flex items-start"
               style={{fontFamily: "Aldhabi, serif", fontWeight: "100"}}
             >
               <FontAwesomeIcon
