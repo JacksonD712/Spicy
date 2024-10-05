@@ -28,7 +28,7 @@ const AppContent = () => {
       {location.pathname !== "/recepies" && <Nav />}
       
       {/* Main Sections that should always be visible on the root page */}
-      {location.pathname === "/Spicy" && (
+      {location.pathname === "/Spicy/" && (
         <>
           <Element name="home">
             <Home />
