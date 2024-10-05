@@ -41,6 +41,8 @@ function Home() {
         showThumbs={false}
         showStatus={false}
         showArrows={false}
+        interval={5000} 
+        transitionTime={2000}  
         className="absolute inset-0"
         renderThumbs={() => null}
       >
@@ -84,8 +86,6 @@ function Home() {
           >
             {sentences[currentSentence]}
           </h1>
-
-        
         </div>
       </div>
     </div>

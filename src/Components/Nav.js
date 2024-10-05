@@ -104,6 +104,12 @@ function Nav() {
           >
             About us
           </div>
+          <div
+            className="px-4 py-2 hover:text-orange-200 cursor-pointer"
+            onClick={() => scrollToSection("product")}
+          >
+            Products
+          </div>
         </div>
 
         {!isScreenMinimized && (
@@ -121,17 +127,12 @@ function Nav() {
             isMenuOpen ? "block" : "hidden"
           } lg:block lg:justify-center w-full nav-text`}
         >
-          <div
-            className="px-4 py-2 hover:text-orange-200 cursor-pointer"
-            onClick={() => scrollToSection("product")}
-          >
-            Products
-          </div>
+     
           <Link
             to="/recepies"
             className="px-4 py-2 hover:text-orange-200 cursor-pointer"
           >
-            Recepies
+            Private Labels 
           </Link>
           <div
             className="px-4 py-2 hover:text-orange-200 cursor-pointer"

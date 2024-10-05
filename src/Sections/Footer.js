@@ -84,14 +84,11 @@ function Footer() {
               />
               Khaldeh, Lebanon
             </div>
-            <div
-              className="text-xl font-thin flex items-start"
-              
-            >
+            <div className="text-xl font-thin flex items-start">
               <FontAwesomeIcon
                 icon={faPhone}
                 className="mr-2"
-                style={{fontSize: "1.5rem"}}
+                style={{fontFamily: "Aldhabi, serif", fontWeight: "300"}}
               />
               +961 03 730 627
             </div>
@@ -104,7 +101,7 @@ function Footer() {
                 className="mr-2"
                 style={{fontSize: "1.5rem"}}
               />
-              spicyfood1@hotmail.com
+              info@spicyfoodlb.com
             </div>
           </div>
         </div>
