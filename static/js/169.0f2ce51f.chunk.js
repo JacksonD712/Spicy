@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkspicyfood=self.webpackChunkspicyfood||[]).push([[169],{8169:(s,c,e)=>{e.r(c),e.d(c,{default:()=>o});e(5043);var n=e(579);const o=function(){return(0,n.jsx)("div",{children:"Naylon"})}}}]);
+//# sourceMappingURL=169.0f2ce51f.chunk.js.map
